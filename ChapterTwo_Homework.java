@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.stream.StreamSupport;
 
 public class ChapterTwo_Homework {
     public static void main(String[] args){
@@ -582,6 +581,7 @@ public class ChapterTwo_Homework {
         NO
          */
 
+        /*
         Scanner in = new Scanner(System.in);
         int A = in.nextInt();
         int B = in.nextInt();
@@ -592,5 +592,7 @@ public class ChapterTwo_Homework {
         } else {
             System.out.println("NO");
         }
+
+         */
     }
 }
