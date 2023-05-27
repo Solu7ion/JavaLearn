@@ -1,6 +1,4 @@
-import java.util.Scanner;
-
-public class ChapterFour {
+public class chapter4_arrays {
     public static void main(String[] args){
         /*
         Вопрос 1:

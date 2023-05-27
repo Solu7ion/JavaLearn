@@ -1,4 +1,4 @@
-public class ChapterOne {
+public class chapter1 {
     public static void main(String[] args){
         /*
         Вопрос 1:

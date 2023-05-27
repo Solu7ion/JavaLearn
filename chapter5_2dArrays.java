@@ -1,6 +1,4 @@
-import java.util.Scanner;
-
-public class ChapterFive {
+public class chapter5_2dArrays {
     public static void main(String[] args){
         /*
         Вопрос 1:
@@ -109,6 +107,12 @@ public class ChapterFive {
 
 
 
+
+
+
+
+
+
         /*
         Вопрос 3:
         Программа запрашивает два числа N и М, затем создает двумерный массив
@@ -167,6 +171,8 @@ public class ChapterFive {
 
 
 
+
+
         /*
         Вопрос 4:
         Программа должна напечатать индексы отрицательных чисел двумерного
@@ -209,6 +215,14 @@ public class ChapterFive {
 
 
 
+
+
+
+
+
+
+
+
         /*
         Вопрос 5:
         Выведите сумму элементов каждой строки двумерного массива размером NxM.
@@ -243,6 +257,17 @@ public class ChapterFive {
         }
 
         */
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -293,6 +318,16 @@ public class ChapterFive {
         System.out.print(iIndex + " " + jIndex);
 
          */
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -361,6 +396,210 @@ public class ChapterFive {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+        /*
+        Вопрос 8:
+        Напишите программу которая выводит двумерный массив в зеркальном
+        отражении относительно вертикали.
+        Ввод:
+        2 3
+        6 2 7
+        4 11 9
+        Вывод:
+        7 2 6
+        9 11 4
+         */
+
+        /*
+        Scanner in = new Scanner(System.in);
+        int rows = in.nextInt();
+        int m = in.nextInt();
+        int[][] arr = new int[rows][m];
+
+        for (int i = 0; i < rows; i++){
+            for ( int j = 0; j < m; j++){
+                arr[i][j] = in.nextInt();
+            }
+        }
+
+        for (int i = 0; i < rows; i++){
+            for ( int j = m-1; j >= 0; j--){
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+         */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*
+        Вопрос 9:
+        Напишите программу в котором я ввожу два числа N и M. Затем создаю
+        двумерный массив NxM. Далее мы заполняем этот массив числами. Программа
+        должна вывести максимальный элемент в каждой строке.
+        Ввод:
+        2 3
+        0 -2 3
+        -5 8 -8
+        Вывод:
+        3
+        8
+         */
+
+
+        /*
+        Scanner in = new Scanner(System.in);
+        int rows = in.nextInt();
+        int m = in.nextInt();
+        int[][] arr = new int[rows][m];
+
+        for (int i = 0; i < rows; i++){
+            for ( int j = 0; j < m; j++){
+                arr[i][j] = in.nextInt();
+            }
+        }
+
+
+        for (int i = 0; i < rows; i++){
+            int max = arr[0][0];
+            for ( int j = 0; j < m; j++){
+                if(arr[i][j] > max) max = arr[i][j];
+            }
+            System.out.println(max);
+        }
+         */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*
+        Вопрос 10:
+        Напишите программу в котором я ввожу два числа N и M. Затем создаю
+        двумерный массив NxM. Далее мы заполняем этот массив числами.
+        Программа должна вывести максимальный элемент в каждом столбце.
+        Ввод:
+        2 3
+        0 -2 3
+        -5 8 -8
+        Вывод:
+        0
+        8
+        3
+         */
+
+
+
+        /*
+        Scanner in = new Scanner(System.in);
+        int rows = in.nextInt();
+        int m = in.nextInt();
+        int[][] arr = new int[rows][m];
+
+        for (int i = 0; i < rows; i++){
+            for ( int j = 0; j < m; j++){
+                arr[i][j] = in.nextInt();
+            }
+        }
+
+        for(int j = 0; j < m; j++){
+            int max = arr[0][j];
+            for (int i = 1; i < rows; i++){
+                if (arr[i][j]> max) max = arr[i][j];
+            }
+            System.out.println(max);
+        }
+
+         */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*
+        Вопрос 11:
+        Программа запрашивает число N, затем мы создаем двумерный массив N x N и
+        заполняем их числами. Программа должна заменить первую нулевую строку
+        массива на последнюю строку массива.
+        Ввод:
+        3
+        1 2 3
+        2 7 4
+        3 4 6
+        Вывод:
+        3 4 6
+        2 7 4
+        1 2 3
+         */
+
+        /*
+        Scanner in = new Scanner(System.in);
+        int m = in.nextInt();
+        int[][] arr = new int[m][m];
+
+        for (int i = 0; i < m; i++){
+            for ( int j = 0; j < m; j++){
+                arr[i][j] = in.nextInt();
+            }
+        }
+
+
+
+        int[] temp = arr[0];
+        arr[0] = arr[m-1];
+        arr[m-1] = temp;
+
+
+        for (int i = 0; i < m; i++){
+            for ( int j = 0; j < m; j++){
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+         */
 
 
 

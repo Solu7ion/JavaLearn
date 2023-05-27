@@ -1,6 +1,4 @@
-import java.util.Scanner;
-
-public class ChapterTwo_Homework {
+public class chapter2_homeWork {
     public static void main(String[] args){
         /*
         Вопрос 1:
